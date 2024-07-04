@@ -70,7 +70,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 2                                      &mo 4                 &kp F7            &kp F8          &kp F9           &kp F10            &kp F11                &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none                 &kp DOLLAR        &kp AMPERSAND   &kp ASTERISK     &kp PERCENT        &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &to 0   &to 1       &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                                &trans            &trans          &trans           &trans             &trans                 &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                                  &trans          &trans           &trans             &trans                 &trans
             >;
