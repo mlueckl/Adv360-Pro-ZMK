@@ -68,11 +68,11 @@
 
         LeftMod {
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans       &trans                                           &trans  &trans                   &trans             &trans                     &trans                &trans                 &trans
-&trans  &MacLogout       &none        &none     &none       &none        &trans                                           &trans  &none                    &kp LEFT_BRACKET   &kp RIGHT_BRACKET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans       &trans  &trans      &trans  &trans  &trans  &hm LA(LEFT) LEFT_ARROW  &hm LA(DOWN) DOWN  &hm LA(UP_ARROW) UP_ARROW  &hm LA(RIGHT) RIGHT   &trans                 &trans
-&trans  &trans           &trans       &trans    &trans      &trans                            &trans      &trans                  &kp HOME                 &kp END            &trans                     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans  &trans           &trans       &trans    &trans                   &Screenshot  &trans  &trans      &trans  &trans  &trans                           &trans             &trans                     &trans                &trans                 &trans
+&trans  &trans           &trans       &trans     &trans      &trans       &trans                                              &trans  &trans                   &trans             &trans                     &trans                &trans                 &trans
+&trans  &MacLogout       &none        &none      &none       &none        &trans                                              &trans  &none                    &kp LEFT_BRACKET   &kp RIGHT_BRACKET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT  &trans       &kp LG(V)  &trans      &trans  &trans  &trans  &hm LA(LEFT) LEFT_ARROW  &hm LA(DOWN) DOWN  &hm LA(UP_ARROW) UP_ARROW  &hm LA(RIGHT) RIGHT   &trans                 &trans
+&trans  &trans           &trans       &trans     &trans      &trans                               &trans      &trans                  &kp HOME                 &kp END            &trans                     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans  &trans           &trans       &kp LG(X)  &kp LG(C)                &Screenshot  &trans     &trans      &trans  &trans  &trans                           &trans             &trans                     &trans                &trans                 &trans
             >;
         };
 
@@ -98,11 +98,11 @@
 
         layer_5 {
             bindings = <
-&kp LG(W)  &trans     &trans              &trans         &trans                       &trans     &trans                                                &kp DEL            &trans    &trans    &trans        &trans     &trans  &trans
-&trans     &kp LG(Q)  &kp LC(W)           &kp LC(E)      &kp LC(R)                    &trans     &trans                                                &trans             &none     &none     &none         &none      &trans  &trans
-&trans     &kp LC(A)  &kp LC(S)           &kp LC(D)      &mt LC(BACKSPACE) BACKSPACE  &kp LC(G)  &trans  &trans  &trans      &trans  &trans            &trans             &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans     &trans     &kp LG(N)           &kp LC(C)      &kp SPACE                    &kp ENTER                  &trans      &trans                                       &trans    &trans    &trans        &trans     &trans  &trans
-&trans     &trans     &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(UP_ARROW)                        &trans  &trans  &trans      &trans  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))            &trans    &trans        &trans     &trans  &trans
+&kp LG(W)  &trans         &trans              &trans         &trans                       &trans     &trans                                                    &kp DEL            &trans    &trans    &trans        &trans     &trans  &trans
+&trans     &kp LG(LS(Q))  &kp LC(W)           &kp LC(E)      &kp LC(R)                    &trans     &trans                                                    &trans             &none     &none     &none         &none      &trans  &trans
+&trans     &kp LC(A)      &kp LC(S)           &kp LC(D)      &mt LC(BACKSPACE) BACKSPACE  &kp LC(G)  &trans  &trans  &trans      &trans      &trans            &trans             &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans     &trans         &kp LG(N)           &kp LC(C)      &kp SPACE                    &kp ENTER                  &trans      &trans                                           &trans    &trans    &trans        &trans     &trans  &trans
+&trans     &trans         &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(UP_ARROW)                        &trans  &trans  &trans      &kp DELETE  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))            &trans    &trans        &trans     &trans  &trans
             >;
         };
 
