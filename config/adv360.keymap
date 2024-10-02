@@ -99,7 +99,7 @@
         layer_5 {
             bindings = <
 &kp LG(W)  &trans         &trans              &trans         &trans                       &trans     &trans                                                    &kp DEL            &trans    &trans    &trans        &trans     &trans  &trans
-&trans     &kp LG(LS(Q))  &kp LC(W)           &kp LC(E)      &kp LC(R)                    &trans     &trans                                                    &trans             &none     &none     &none         &none      &trans  &trans
+&trans     &kp LG(LC(Q))  &kp LC(W)           &kp LC(E)      &kp LC(R)                    &trans     &trans                                                    &trans             &none     &none     &none         &none      &trans  &trans
 &trans     &kp LC(A)      &kp LC(S)           &kp LC(D)      &mt LC(BACKSPACE) BACKSPACE  &kp LC(G)  &trans  &trans  &trans      &trans      &trans            &trans             &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans     &trans         &kp LG(N)           &kp LC(C)      &kp SPACE                    &kp ENTER                  &trans      &trans                                           &trans    &trans    &trans        &trans     &trans  &trans
 &trans     &trans         &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(UP_ARROW)                        &trans  &trans  &trans      &kp DELETE  &kp LC(LS(LEFT))  &kp LC(LS(RIGHT))            &trans    &trans        &trans     &trans  &trans
