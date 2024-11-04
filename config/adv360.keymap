@@ -33,12 +33,21 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Special {
+            bindings = <&mo 2>;
+            key-positions = <67 68>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&kp EQUAL  &kp N1                      &kp N2          &kp N3            &kp N4              &kp N5              &tog 2                                                                                              &mo 3          &kp N6               &kp N7               &kp N8             &kp N9                       &kp N0           &kp MINUS
+&kp EQUAL  &kp N1                      &kp N2          &kp N3            &kp N4              &kp N5              &tog 3                                                                                              &mo 4          &kp N6               &kp N7               &kp N8             &kp N9                       &kp N0           &kp MINUS
 &kp TAB    &kp Q                       &kp W           &kp E             &kp R               &kp T               &kp LS(LG(NUMBER_4))                                                                                &none          &kp Y                &kp U                &kp I              &kp O                        &kp P            &kp BSLH
 &kp ESC    &hm LA(LS(LEFT_CONTROL)) A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_COMMAND F  &hm LEFT_CONTROL G  &none                 &kp LEFT_COMMAND  &kp LALT              &kp RIGHT_ALT      &kp RIGHT_COMMAND  &kp LG(SPACE)  &hm RIGHT_CONTROL H  &hm RIGHT_COMMAND J  &hm RIGHT_SHIFT K  &hm LS(LA(RIGHT_CONTROL)) L  &kp SEMI         &kp SQT
 &kp LSHFT  &kp Z                       &kp X           &kp C             &kp V               &kp B                                                       &kp LEFT_CONTROL      &kp RIGHT_CONTROL                                    &kp N                &kp M                &kp COMMA          &kp DOT                      &kp FSLH         &kp RSHFT
@@ -56,9 +65,19 @@
             >;
         };
 
+        Special {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans         &trans         &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LA(LG(U))  &trans         &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LA(LG(V))  &kp LG(LA(H))  &kp LA(LG(G))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans         &trans         &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans         &trans         &trans  &trans
+            >;
+        };
+
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                      &mo 3      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                      &mo 4      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                       &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &none
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none   &trans  &trans      &trans  &trans  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                   &trans      &trans                     &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
