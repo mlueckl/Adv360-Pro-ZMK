@@ -23,11 +23,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <305>;
+            quick-tap-ms = <210>;
         };
     };
 
@@ -38,7 +38,7 @@
         compatible = "zmk,combos";
 
         Special {
-            bindings = <&mo 2>;
+            bindings = <&tog 3>;
             key-positions = <67 68>;
         };
     };
@@ -52,37 +52,37 @@
 &kp TAB    &kp Q               &kp W           &kp E             &kp R               &kp T                     &kp LS(LG(NUMBER_4))                                                                                        &none          &kp Y                      &kp U                &kp I              &kp O            &kp P                   &kp BSLH
 &kp ESC    &hm LEFT_COMMAND A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &hm LA(LC(LEFT_SHIFT)) G  &kp LS(LC(LA(LEFT_COMMAND)))  &kp LEFT_COMMAND  &kp LALT              &kp RIGHT_ALT      &kp RIGHT_COMMAND  &kp LG(SPACE)  &hm RA(RC(RIGHT_SHIFT)) H  &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_COMMAND SEMI  &kp SQT
 &kp LSHFT  &kp Z               &kp X           &kp C             &kp V               &kp B                                                                     &kp LEFT_CONTROL      &kp RIGHT_CONTROL                                    &kp N                      &kp M                &kp COMMA          &kp DOT          &kp FSLH                &kp RSHFT
-&mo 3      &none               &none           &none             &none                                         &kp BSPC                      &kp DEL           &mo 1                 &mo 1              &kp ENTER          &kp SPACE                                 &kp LEFT_ARROW       &kp UP_ARROW       &kp DOWN_ARROW   &kp RIGHT_ARROW         &none
+&mo 2      &none               &none           &none             &none                                         &kp BSPC                      &kp DEL           &mo 1                 &mo 1              &kp ENTER          &kp SPACE                                 &kp LEFT_ARROW       &kp UP_ARROW       &kp DOWN_ARROW   &kp RIGHT_ARROW         &none
             >;
         };
 
         Symbols {
             bindings = <
-&trans            &trans           &trans       &trans     &trans      &trans       &kp LC(LG(Q))                                                                         &trans     &trans     &trans          &trans            &trans                &trans                 &trans
-&trans            &kp LG(Q)        &kp LG(W)    &kp LG(E)  &kp LG(R)   &kp LG(T)    &trans                                                                                &trans     &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp GRAVE         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT  &trans         &kp K_MUTE        &kp C_VOLUME_UP        &kp UP_ARROW  &kp DOWN_ARROW  &trans     &kp CARET  &kp AMPERSAND   &kp ASTERISK      &kp MINUS             &kp EQUAL              &trans
-&kp LEFT_ALT      &kp LG(Z)        &kp LG(X)    &kp LG(C)  &kp LG(V)   &trans                                        &kp C_VOLUME_DOWN      &trans                                   &trans     &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &kp RIGHT_SHIFT
-&kp LEFT_COMMAND  &none            &none        &none      &none                    &none          &kp K_PLAY_PAUSE  &trans                 &trans        &kp LEFT_ARROW  &kp RIGHT             &none           &none             &none                 &none                  &trans
+&none             &none            &none        &none      &none       &none        &kp LC(LG(Q))                                                                         &none      &none      &none           &none             &none                 &none                  &none
+&none             &kp LG(Q)        &kp LG(W)    &kp LG(E)  &kp LG(R)   &kp LG(T)    &none                                                                                 &none      &none      &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&kp GRAVE         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT  &none          &kp K_MUTE        &kp C_VOLUME_UP        &kp UP_ARROW  &kp DOWN_ARROW  &none      &kp CARET  &kp AMPERSAND   &kp ASTERISK      &kp MINUS             &kp EQUAL              &none
+&kp LEFT_ALT      &kp LG(Z)        &kp LG(X)    &kp LG(C)  &kp LG(V)   &none                                         &kp C_VOLUME_DOWN      &none                                    &none      &none           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &kp RIGHT_SHIFT
+&kp LEFT_COMMAND  &none            &none        &none      &none                    &none          &kp K_PLAY_PAUSE  &none                  &none         &kp LEFT_ARROW  &kp RIGHT             &none           &none             &none                 &none                  &none
             >;
         };
 
         Special {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans         &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LA(LG(U))  &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LA(LG(V))  &kp LG(LA(H))  &kp LA(LG(G))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans         &trans         &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans         &trans         &trans  &trans
+&none  &none  &none  &none  &none  &none  &none                                                                               &none  &none           &none           &none         &none            &none  &none
+&none  &none  &none  &none  &none  &none  &none                                                                               &none  &none           &none           &none         &none            &none  &none
+&none  &none  &none  &none  &none  &none  &none             &kp LA(LEFT_CONTROL)  &kp LA(LC(LEFT_COMMAND))      &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none  &none  &none  &none  &none                                          &none                         &none                &none           &none           &none         &none            &none  &none
+&none  &none  &none  &none  &none         &kp LEFT_CONTROL  &kp LEFT_COMMAND      &kp LEFT_ALT                  &none  &none  &none                  &none           &none         &none            &none  &none
             >;
         };
 
         WindowManager {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans             &trans                  &trans                &trans                  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans             &kp LC(LA(U))           &kp LC(LA(I))         &trans                  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LC(LA(DOWN_ARROW)))  &trans             &kp LA(LC(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                                                 &kp LA(LC(J))           &kp LC(LA(K))         &trans                  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &kp LS(LA(LC(UP_ARROW)))    &kp LC(LA(ENTER))                          &trans                &trans                  &trans                   &trans  &trans
+&none  &none  &none  &none  &none  &none  &none                                                       &none              &none                   &none                 &none                   &none                    &none  &none
+&none  &none  &none  &none  &none  &none  &none                                                       &none              &kp LC(LA(U))           &kp LC(LA(I))         &none                   &none                    &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &kp LS(LC(LA(DOWN_ARROW)))  &none              &kp LA(LC(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LC(LA(RIGHT_ARROW))  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                                                 &kp LA(LC(J))           &kp LC(LA(K))         &none                   &none                    &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &kp LS(LA(LC(UP_ARROW)))    &kp LC(LA(ENTER))                          &none                 &none                   &none                    &none  &none
             >;
         };
 
