@@ -29,6 +29,18 @@
 
             quick-tap-ms = <185>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <185>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <60 67 68 75 6>;
+        };
     };
 
     macros {
