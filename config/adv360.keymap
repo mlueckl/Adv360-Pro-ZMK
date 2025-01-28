@@ -17,20 +17,6 @@
             bindings = <&kp RET>;
         };
 
-        VimSplitH: VimSplitH {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(S) &kp V>;
-            label = "VIMSPLITH";
-        };
-
-        VimSplitV: VimSplitV {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(S) &kp V>;
-            label = "VIMSPLITV";
-        };
-
         #endif
 
         hm: homerow_mods {
